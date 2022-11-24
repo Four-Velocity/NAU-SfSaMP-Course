@@ -3,12 +3,12 @@
     <v-card-text>
       <v-img
         v-if="lang === 'uk'"
-        :src="`../../public/res/uk/CoA.png`"
+        :src="`/res/uk/CoA.png`"
         width="200px"
       ></v-img>
       <v-img
         v-else-if="lang === 'en'"
-        :src="`../../public/res/en/CoA.png`"
+        :src="`/res/en/CoA.png`"
         width="200px"
       ></v-img>
     </v-card-text>

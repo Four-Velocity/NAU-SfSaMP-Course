@@ -6,11 +6,11 @@
 
     {{ sem_mapping[lang] }}
     <v-btn @click="lang = 'en'" v-if="lang === 'uk' || !lang">
-      <v-img src="../../public/res/uk/Flag.svg" width="40px"></v-img>
+      <v-img src="/res/uk/Flag.svg" width="40px"></v-img>
     </v-btn>
 
     <v-btn @click="lang = 'uk'" v-else-if="lang === 'en'">
-      <v-img src="../../public/res/en/Flag.svg" width="40px"></v-img>
+      <v-img src="/res/en/Flag.svg" width="40px"></v-img>
     </v-btn>
 
     <template v-slot:extension>
