@@ -1,7 +1,16 @@
 <template>
   <v-card>
     <v-card-text>
-      <v-img :src="`../../public/res/${lang}/CoA.png`" width="200px"></v-img>
+      <v-img
+        v-if="lang === 'uk'"
+        :src="`../../public/res/uk/CoA.png`"
+        width="200px"
+      ></v-img>
+      <v-img
+        v-else-if="lang === 'en'"
+        :src="`../../public/res/en/CoA.png`"
+        width="200px"
+      ></v-img>
     </v-card-text>
   </v-card>
 </template>
