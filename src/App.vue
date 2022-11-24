@@ -1,12 +1,11 @@
 <template>
   <v-app>
-    <AppBar />
     <v-main>
-      
+      <Main></Main>
     </v-main>
   </v-app>
 </template>
 
 <script setup>
-  import AppBar from '@/components/AppBar.vue'
+  import Main from '@/components/Main.vue'
 </script>
