@@ -1,6 +1,8 @@
 <template>
   <v-card>
-    <v-card-text> Олег Мазур </v-card-text>
+    <v-card-text>{{
+      lang === "uk" || !lang ? ukText.fullname : enText.fullname
+    }}</v-card-text>
   </v-card>
 </template>
 
@@ -11,3 +13,16 @@
   color: rgb(255, 204, 0);
 }
 </style>
+
+<script>
+import enText from "../../public/res/en/text.json";
+import ukText from "../../public/res/uk/text.json";
+
+export default {
+  props: ["lang"],
+  data: () => ({
+    enText: enText,
+    ukText: ukText,
+  }),
+};
+</script>
