@@ -16,7 +16,7 @@ export default defineConfig({
       autoImport: true,
     }),
     VitePWA({
-      registerType: "autoUpdate",
+      mode: "development",  
     })
   ],
   define: { 'process.env': {} },
