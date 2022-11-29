@@ -1,6 +1,7 @@
 // Plugins
 import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -14,6 +15,9 @@ export default defineConfig({
     vuetify({
       autoImport: true,
     }),
+    VitePWA({
+      registerType: "autoUpdate",
+    })
   ],
   define: { 'process.env': {} },
   resolve: {
