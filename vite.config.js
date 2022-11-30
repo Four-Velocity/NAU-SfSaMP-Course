@@ -16,7 +16,27 @@ export default defineConfig({
       autoImport: true,
     }),
     VitePWA({
-      mode: "development",  
+      registerType: "autoUpdate",
+      manifest: {
+        name: "Лабораторна робота №1",
+        short_name: "ЛБ №1",
+        background_color: "#590DE5",
+        theme_color: "#590DE5",
+        display: "fullscreen",
+        start_url: ".",
+        scope: "/",
+        description: "",
+        icons: [
+          {
+            "src": "img/icons/icon.png",
+            "sizes": "160x160",
+            "type": "image/png"
+          }
+        ]
+      },
+      devOptions: {
+        enabled: true
+      }
     })
   ],
   define: { 'process.env': {} },
